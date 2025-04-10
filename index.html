@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boutique MyChris2K</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <header>
+    <h1>Bienvenue dans la boutique MyChris2K 🛍️</h1>
+    <div id="panier">🛒 Panier (0)</div>
+  </header>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <div class="produits">
+      <div class="produit">
+        <img src="https://via.placeholder.com/150" alt="Produit 1">
+        <h2>T-shirt Stylé</h2>
+        <p>25€</p>
+        <button onclick="ajouterAuPanier('T-shirt Stylé', 25)">Ajouter</button>
+      </div>
+      <div class="produit">
+        <img src="https://via.placeholder.com/150" alt="Produit 2">
+        <h2>Casquette Mode</h2>
+        <p>15€</p>
+        <button onclick="ajouterAuPanier('Casquette Mode', 15)">Ajouter</button>
+      </div>
+    </div>
+  </main>
 
-    <section id="accueil">
-        <h1>Bienvenue sur mon portfolio</h1>
-        <p>Je suis un développeur passionné.</p>
-        <img src="https://via.placeholder.com/300" alt="Image de présentation">
-    </section>
-    
-    <section class="parallax"></section>
-
-    <section id="apropos">
-        <h2>À propos de moi</h2>
-        <p>Je m'appelle OLIVIER et j'apprends à créer des sites web avec HTML, CSS et JavaScript !</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contacte-moi</h2>
-        <form>
-            <input type="text" placeholder="Ton nom">
-            <input type="email" placeholder="Ton email">
-            <textarea placeholder="Ton message"></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 - MonPortfolio</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
